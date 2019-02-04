@@ -92,7 +92,7 @@ Response object:
 | Attribute | Type | Description |
 |-----------|------|-------------|
 | next_page_token | string, optional | Token for retrieving next page of results |
-| teams | list&lt;team&gt; | A list of team objects |
+| teams | list | A list of team objects |
 
 Example:
 
