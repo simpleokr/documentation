@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Users - Simple OKR</title>
+  <link rel="stylesheet" href="https://docs.simpleokr.com/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="https://docs.simpleokr.com/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="https://docs.simpleokr.com" class="site-title fs-6 lh-tight">Simple OKR</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="https://docs.simpleokr.com/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/api" class="navigation-list-link">Developer API</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/authentication.html" class="navigation-list-link">Authentication</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/errors.html" class="navigation-list-link">Errors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="https://docs.simpleokr.com/api/reference" class="navigation-list-link">API Reference</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="https://docs.simpleokr.com/api/reference/users.html" class="navigation-list-link active">Users</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/teams.html" class="navigation-list-link">Teams</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/cycles.html" class="navigation-list-link">Cycles</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/objectives.html" class="navigation-list-link">Objectives</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/keyresults.html" class="navigation-list-link">Key Results</a>
+                              </li>
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+        </div>
+      </div>
+      <div class="main-content js-main-content" tabindex="0">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api">Developer API</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api/reference">API Reference</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Users</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="users">Users</h1>
+
+<p>User object holds information about a user of an organization.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#the-user-object" id="markdown-toc-the-user-object">The user object</a></li>
+  <li><a href="#list-all-users" id="markdown-toc-list-all-users">List all users</a></li>
+  <li><a href="#retrieve-a-user" id="markdown-toc-retrieve-a-user">Retrieve a user</a></li>
+</ul>
+
+<h2 id="the-user-object">The user object</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Unique user identifier</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>Full name of the user</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>string</td>
+      <td>Email address associated with the user</td>
+    </tr>
+    <tr>
+      <td>is_active</td>
+      <td>bool</td>
+      <td>Indicator whether the user is active or not. Inactive users cannot sign into Simple OKR.</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>string</td>
+      <td>Time when the user was created. RFC 3339 format.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email@example.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="list-all-users">List all users</h2>
+
+<p>Returns a list of your users.</p>
+
+<h3 class="no_toc" id="request">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/users
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page_token</td>
+      <td>string, optional</td>
+      <td>Page identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response">Response</h3>
+
+<p>Response object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>next_page_token</td>
+      <td>string, optional</td>
+      <td>Token for retrieving next page of results</td>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>list</td>
+      <td>A list of user objects</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"next_page_token"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"John Doe"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email@example.com"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"is_active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="retrieve-a-user">Retrieve a user</h2>
+
+<p>Retrieve details about the existing user. Supply the unique user ID from a user
+list response.</p>
+
+<h3 class="no_toc" id="request-1">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/users/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>User identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-1">Response</h3>
+
+<p>Returns a user object on success.</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

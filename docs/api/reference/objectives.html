@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Objectives - Simple OKR</title>
+  <link rel="stylesheet" href="https://docs.simpleokr.com/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="https://docs.simpleokr.com/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="https://docs.simpleokr.com" class="site-title fs-6 lh-tight">Simple OKR</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="https://docs.simpleokr.com/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/api" class="navigation-list-link">Developer API</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/authentication.html" class="navigation-list-link">Authentication</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/errors.html" class="navigation-list-link">Errors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="https://docs.simpleokr.com/api/reference" class="navigation-list-link">API Reference</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/users.html" class="navigation-list-link">Users</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/teams.html" class="navigation-list-link">Teams</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/cycles.html" class="navigation-list-link">Cycles</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="https://docs.simpleokr.com/api/reference/objectives.html" class="navigation-list-link active">Objectives</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/keyresults.html" class="navigation-list-link">Key Results</a>
+                              </li>
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+        </div>
+      </div>
+      <div class="main-content js-main-content" tabindex="0">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api">Developer API</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api/reference">API Reference</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Objectives</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="objectives">Objectives</h1>
+
+<p>Objectives let you capture company, team or personal goals as part of the OKR
+process.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#the-objective-object" id="markdown-toc-the-objective-object">The objective object</a></li>
+  <li><a href="#create-an-objective" id="markdown-toc-create-an-objective">Create an objective</a></li>
+  <li><a href="#list-all-objectives" id="markdown-toc-list-all-objectives">List all objectives</a></li>
+  <li><a href="#retrieve-an-objective" id="markdown-toc-retrieve-an-objective">Retrieve an objective</a></li>
+  <li><a href="#update-an-objective" id="markdown-toc-update-an-objective">Update an objective</a></li>
+  <li><a href="#delete-an-objective" id="markdown-toc-delete-an-objective">Delete an objective</a></li>
+  <li><a href="#add-key-result-to-an-objective" id="markdown-toc-add-key-result-to-an-objective">Add key result to an objective</a></li>
+  <li><a href="#list-key-results-for-an-objective" id="markdown-toc-list-key-results-for-an-objective">List key results for an objective</a></li>
+</ul>
+
+<h2 id="the-objective-object">The objective object</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Unique objective identifier</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>Name of the objective</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>string</td>
+      <td>Time when the objective was created. RFC 3339 format</td>
+    </tr>
+    <tr>
+      <td>modified_at</td>
+      <td>string</td>
+      <td>Time when the objective was last updated. RFC 3339 format</td>
+    </tr>
+    <tr>
+      <td>team_id</td>
+      <td>string, nullable</td>
+      <td>Unique team identifier. Indicates the team assigned to the objective</td>
+    </tr>
+    <tr>
+      <td>assignee_id</td>
+      <td>string, nullable</td>
+      <td>Unique user identifier. Indicates the user assigned to the objective</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>string, nullable</td>
+      <td>Description of the objective</td>
+    </tr>
+    <tr>
+      <td>is_personal</td>
+      <td>bool</td>
+      <td>Flag indicating whether this is a personal objective</td>
+    </tr>
+    <tr>
+      <td>is_company</td>
+      <td>bool</td>
+      <td>Flag indicating whether this is a company objective</td>
+    </tr>
+    <tr>
+      <td>parent_objective_id</td>
+      <td>string, nullable</td>
+      <td>Unique objective identifier. Indicates objective alignment</td>
+    </tr>
+    <tr>
+      <td>cycle_id</td>
+      <td>string</td>
+      <td>Unique delivery cycle identifier. Indicates the delivery cycle this objective belongs to</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Become best at OKRs"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"modified_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"team_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assignee_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_personal"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_company"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"parent_objective_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cycle_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-f25d-4df2-9f51-3c38298996b8"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="create-an-objective">Create an objective</h2>
+
+<p>Create a new objective object.</p>
+
+<h3 class="no_toc" id="request">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/objectives
+</code></pre></div></div>
+
+<p>Request object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>Objective name</td>
+    </tr>
+    <tr>
+      <td>cycle_id</td>
+      <td>string</td>
+      <td>Delivery cycle identifier</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>string, optional</td>
+      <td>Objective description</td>
+    </tr>
+    <tr>
+      <td>team_id</td>
+      <td>string, optional</td>
+      <td>Team identifier</td>
+    </tr>
+    <tr>
+      <td>assignee_id</td>
+      <td>string, optional</td>
+      <td>User identifier</td>
+    </tr>
+    <tr>
+      <td>parent_objective_id</td>
+      <td>string, optional</td>
+      <td>Objective identifier</td>
+    </tr>
+    <tr>
+      <td>is_company</td>
+      <td>bool</td>
+      <td>Flag indicating whether this is a company objective</td>
+    </tr>
+    <tr>
+      <td>is_personal</td>
+      <td>bool</td>
+      <td>Flag indicating whether this is a personal objective</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Become best at OKRs"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cycle_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"team_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"assignee_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"parent_objective_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_company"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"is_personal"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 class="no_toc" id="response">Response</h3>
+
+<p>Returns a newly created objective object.</p>
+
+<h2 id="list-all-objectives">List all objectives</h2>
+
+<p>Returns a list of your objectives.</p>
+
+<h3 class="no_toc" id="request-1">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/objectives
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cycle_id</td>
+      <td>string</td>
+      <td>Cycle identifier</td>
+    </tr>
+    <tr>
+      <td>page_token</td>
+      <td>string, optional</td>
+      <td>Page identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-1">Response</h3>
+
+<p>Response object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>next_page_token</td>
+      <td>string, optional</td>
+      <td>Token for retrieving next page of results</td>
+    </tr>
+    <tr>
+      <td>objectives</td>
+      <td>list</td>
+      <td>A list of objective objects</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"next_page_token"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"objectives"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Become best at OKRs"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"cycle_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"team_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"assignee_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"parent_objective_id"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"is_company"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"is_personal"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="retrieve-an-objective">Retrieve an objective</h2>
+
+<p>Retrieve details about the objective. Supply the unique objective ID from
+either a objective creation response or objective list.</p>
+
+<h3 class="no_toc" id="request-2">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/objectives/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Objective identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-2">Response</h3>
+
+<p>Returns an objective object.</p>
+
+<h2 id="update-an-objective">Update an objective</h2>
+
+<p>Update details of an objective.</p>
+
+<h3 class="no_toc" id="request-3">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/objectives/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Cycle identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Request object:</p>
+
+<p>Request body is an entire objective object with new values. Any omitted
+attributes will inherit default false value of that particular type.</p>
+
+<h3 class="no_toc" id="response-3">Response</h3>
+
+<p>Returns an updated objective object.</p>
+
+<h2 id="delete-an-objective">Delete an objective</h2>
+
+<p>Delete an existing objective and all information associated with it.</p>
+
+<h3 class="no_toc" id="request-4">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /v1/objectives/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Identifier of a objective to be deleted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-4">Response</h3>
+
+<p>Returns a 200 HTTP response on success.</p>
+
+<h2 id="add-key-result-to-an-objective">Add key result to an objective</h2>
+
+<p>Add a new key result to an objective.</p>
+
+<h3 class="no_toc" id="request-5">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/objectives/:id/keyresults
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Identifier of a objective</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Request object:</p>
+
+<p>Request body is a key result object.</p>
+
+<h3 class="no_toc" id="response-5">Response</h3>
+
+<p>Returns a newly created key result object.</p>
+
+<h2 id="list-key-results-for-an-objective">List key results for an objective</h2>
+
+<p>Lists all key results for an objective.</p>
+
+<h3 class="no_toc" id="request-6">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/objectives/:id/keyresults
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Identifier of a objective</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-6">Response</h3>
+
+<p>Returns a list of key results associated with the objective.</p>
+
+<p>Response object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>next_page_token</td>
+      <td>string, optional</td>
+      <td>Token for retrieving next page of results</td>
+    </tr>
+    <tr>
+      <td>keyresults</td>
+      <td>list</td>
+      <td>A list of key result objects</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

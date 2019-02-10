@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Authentication - Simple OKR</title>
+  <link rel="stylesheet" href="https://docs.simpleokr.com/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="https://docs.simpleokr.com/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="https://docs.simpleokr.com" class="site-title fs-6 lh-tight">Simple OKR</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/api" class="navigation-list-link">Developer API</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="https://docs.simpleokr.com/api/authentication.html" class="navigation-list-link active">Authentication</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/errors.html" class="navigation-list-link">Errors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/reference" class="navigation-list-link">API Reference</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/users.html" class="navigation-list-link">Users</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/teams.html" class="navigation-list-link">Teams</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/cycles.html" class="navigation-list-link">Cycles</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/objectives.html" class="navigation-list-link">Objectives</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/keyresults.html" class="navigation-list-link">Key Results</a>
+                              </li>
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+        </div>
+      </div>
+      <div class="main-content js-main-content" tabindex="0">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api">Developer API</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Authentication</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="authentication">Authentication</h1>
+
+<p>Simple OKR uses API keys to authenticate requests. You can manage API keys via
+<a href="https://simpleokr.com">Simple OKR website</a>.</p>
+
+<h2 id="api-keys">API Keys</h2>
+
+<p>API keys consist of public and secret components.</p>
+
+<p>Public component (called <code class="highlighter-rouge">Credential</code>) is used to identify the API key on
+Simple OKR servers. The secret component (called <code class="highlighter-rouge">Secret Key</code>) is used to
+construct a request signature. The secret component should be kept private and
+not shared with anyone.</p>
+
+<h2 id="s1-hmac-sha256-authentication-protocol">S1-HMAC-SHA256 authentication protocol</h2>
+
+<p><code class="highlighter-rouge">S1-HMAC-SHA256</code> is the first version of authentication protocol used by the
+Simple OKR API.</p>
+
+<p>All requests must include HTTP <code class="highlighter-rouge">Authorization</code> header in the following format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Authorization: S1-HMAC-SHA256 Credential=&lt;credential&gt;&amp;Timestamp=&lt;timestamp&gt;&amp;Signature=&lt;signature&gt;
+</code></pre></div></div>
+
+<p>Authorization header arguments:</p>
+
+<ul>
+  <li><strong>credential</strong> is the public component of the API key.</li>
+  <li><strong>timestamp</strong> is the RFC 3339 timestamp of the current time in UTC. Your clock must be synchronized. We will allow 10 minute clock skew in either direction.</li>
+  <li><strong>signature</strong> is a signature constructed using the secret key, credential and the timestamp.</li>
+</ul>
+
+<p>The signature is constructed by concatenating <code class="highlighter-rouge">credential</code> with <code class="highlighter-rouge">timestamp</code> and
+applying HMAC-SHA256 with the secret key. The output of HMAC must be encoded in
+hex and converted to lower case. This value becomes the signature.</p>
+
+<p>Below are examples API keys and the signature they should produce. Use this example to validate
+your own signature generation methods:</p>
+
+<ul>
+  <li>Credential: <code class="highlighter-rouge">mycredential</code></li>
+  <li>Secret key: <code class="highlighter-rouge">mysecret</code></li>
+  <li>Timestamp: <code class="highlighter-rouge">2019-02-03T01:55:37Z</code></li>
+  <li>Signature: <code class="highlighter-rouge">ab9b15c8321dd0e00bbbcc8e33629adcb273b1dfeedb54387cb305fca6c409fa</code></li>
+</ul>
+
+<p>Example signature generation with Go:</p>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span><span class="x"> </span><span class="p">(</span><span class="x">
+  </span><span class="s">"crypto/hmac"</span><span class="x">
+  </span><span class="s">"crypto/sha256"</span><span class="x">
+  </span><span class="s">"encoding/hex"</span><span class="x">
+  </span><span class="s">"strings"</span><span class="x">
+  </span><span class="s">"time"</span><span class="x">
+</span><span class="p">)</span><span class="x">
+
+</span><span class="k">func</span><span class="x"> </span><span class="n">hmacSign</span><span class="p">(</span><span class="n">secret</span><span class="x"> </span><span class="kt">string</span><span class="p">,</span><span class="x"> </span><span class="n">data</span><span class="x"> </span><span class="kt">string</span><span class="p">)</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="p">{</span><span class="x">
+  </span><span class="n">mac</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">hmac</span><span class="o">.</span><span class="n">New</span><span class="p">(</span><span class="n">sha256</span><span class="o">.</span><span class="n">New</span><span class="p">,</span><span class="x"> </span><span class="p">[]</span><span class="kt">byte</span><span class="p">(</span><span class="n">secret</span><span class="p">))</span><span class="x">
+  </span><span class="n">mac</span><span class="o">.</span><span class="n">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="x">
+  </span><span class="k">return</span><span class="x"> </span><span class="n">strings</span><span class="o">.</span><span class="n">ToLower</span><span class="p">(</span><span class="n">hex</span><span class="o">.</span><span class="n">EncodeToString</span><span class="p">(</span><span class="n">mac</span><span class="o">.</span><span class="n">Sum</span><span class="p">(</span><span class="no">nil</span><span class="p">)))</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
+  </span><span class="n">credential</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"mycredential"</span><span class="x">
+  </span><span class="n">secret</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="s">"mysecret"</span><span class="x">
+  </span><span class="n">timestamp</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">time</span><span class="o">.</span><span class="n">Now</span><span class="p">()</span><span class="o">.</span><span class="n">UTC</span><span class="p">()</span><span class="o">.</span><span class="n">Format</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">RFC3339</span><span class="p">)</span><span class="x">
+
+  </span><span class="n">signature</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">hmacSign</span><span class="p">(</span><span class="n">secret</span><span class="p">,</span><span class="x"> </span><span class="n">credential</span><span class="o">+</span><span class="n">timestamp</span><span class="p">)</span><span class="x">
+  </span><span class="nb">println</span><span class="p">(</span><span class="n">credential</span><span class="p">,</span><span class="x"> </span><span class="n">secret</span><span class="p">,</span><span class="x"> </span><span class="n">timestamp</span><span class="p">,</span><span class="x"> </span><span class="n">signature</span><span class="p">)</span><span class="x">
+</span><span class="p">}</span><span class="x">
+
+</span></code></pre></div></div>
+
+<p>Example signature generation with Python 3:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">hmac</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+
+<span class="n">credential</span> <span class="o">=</span> <span class="n">b</span><span class="s">"mycredential"</span>
+<span class="n">secret</span> <span class="o">=</span> <span class="n">b</span><span class="s">"mysecret"</span>
+<span class="n">timestamp</span> <span class="o">=</span> <span class="n">b</span><span class="s">"2019-02-03T01:55:37Z"</span>
+
+<span class="n">mac</span> <span class="o">=</span> <span class="n">hmac</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="nb">bytearray</span><span class="p">(</span><span class="n">secret</span><span class="p">),</span> <span class="n">digestmod</span><span class="o">=</span><span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">)</span>
+<span class="n">mac</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">bytearray</span><span class="p">(</span><span class="n">credential</span> <span class="o">+</span> <span class="n">timestamp</span><span class="p">))</span>
+<span class="n">digest</span> <span class="o">=</span> <span class="n">mac</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">credential</span><span class="p">,</span> <span class="n">secret</span><span class="p">,</span> <span class="n">timestamp</span><span class="p">,</span> <span class="n">digest</span><span class="p">)</span>
+</code></pre></div></div>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

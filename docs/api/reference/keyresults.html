@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Key Results - Simple OKR</title>
+  <link rel="stylesheet" href="https://docs.simpleokr.com/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="https://docs.simpleokr.com/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="https://docs.simpleokr.com" class="site-title fs-6 lh-tight">Simple OKR</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="https://docs.simpleokr.com/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/api" class="navigation-list-link">Developer API</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/authentication.html" class="navigation-list-link">Authentication</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/errors.html" class="navigation-list-link">Errors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="https://docs.simpleokr.com/api/reference" class="navigation-list-link">API Reference</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/users.html" class="navigation-list-link">Users</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/teams.html" class="navigation-list-link">Teams</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/cycles.html" class="navigation-list-link">Cycles</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/objectives.html" class="navigation-list-link">Objectives</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="https://docs.simpleokr.com/api/reference/keyresults.html" class="navigation-list-link active">Key Results</a>
+                              </li>
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+        </div>
+      </div>
+      <div class="main-content js-main-content" tabindex="0">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api">Developer API</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api/reference">API Reference</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Key Results</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="key-results">Key Results</h1>
+
+<p>Key results are quantitative metrics that let you track Objective’s performance.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#the-key-result-object" id="markdown-toc-the-key-result-object">The key result object</a></li>
+  <li><a href="#list-all-key-results" id="markdown-toc-list-all-key-results">List all key results</a></li>
+  <li><a href="#retrieve-an-key-result" id="markdown-toc-retrieve-an-key-result">Retrieve an key result</a></li>
+  <li><a href="#update-an-key-result" id="markdown-toc-update-an-key-result">Update an key result</a></li>
+  <li><a href="#delete-a-key-result" id="markdown-toc-delete-a-key-result">Delete a key result</a></li>
+</ul>
+
+<h2 id="the-key-result-object">The key result object</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Unique key result identifier.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>Name of the key result.</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>string</td>
+      <td>Time when the key result was created. RFC 3339 format.</td>
+    </tr>
+    <tr>
+      <td>modified_at</td>
+      <td>string</td>
+      <td>Time when the key result was last updated. RFC 3339 format.</td>
+    </tr>
+    <tr>
+      <td>objective_id</td>
+      <td>string</td>
+      <td>Objective identifier.</td>
+    </tr>
+    <tr>
+      <td>confidence</td>
+      <td>string</td>
+      <td>Decimal string between 0.0 and 1.0 indicating confidence of reaching the target.</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>string</td>
+      <td>Metric type. One of <code class="highlighter-rouge">milestone</code>, <code class="highlighter-rouge">baseline</code>, <code class="highlighter-rouge">range</code>, <code class="highlighter-rouge">positive</code>, <code class="highlighter-rouge">negative</code>.</td>
+    </tr>
+    <tr>
+      <td>current_value</td>
+      <td>string</td>
+      <td>Decimal. Current metric value.</td>
+    </tr>
+    <tr>
+      <td>target_value_min</td>
+      <td>string, nullable</td>
+      <td>Decimal. Minimum target value.</td>
+    </tr>
+    <tr>
+      <td>target_value_max</td>
+      <td>string, nullable</td>
+      <td>Decimal. Maximum target value.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Target values are optional for some metric types.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">postive</code> and <code class="highlighter-rouge">negative</code> metrics will have only <code class="highlighter-rouge">target_value_min</code> set.</li>
+  <li><code class="highlighter-rouge">range</code> metrics will have both <code class="highlighter-rouge">target_value_min</code> and <code class="highlighter-rouge">target_value_max</code> set.</li>
+  <li><code class="highlighter-rouge">baseline</code> will not have either of the target values set.</li>
+  <li><code class="highlighter-rouge">milestone</code> will always have <code class="highlighter-rouge">target_value_min</code> set to <code class="highlighter-rouge">1.00</code>.</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$40K in revenue from subscription sales"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"modified_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"objective_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"positive"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"confidence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.50"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"current_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10000.00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"target_value_min"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40000.00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"target_value_max"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="list-all-key-results">List all key results</h2>
+
+<p>Returns a list of your key results.</p>
+
+<h3 class="no_toc" id="request">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/keyresults
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cycle_id</td>
+      <td>string</td>
+      <td>Cycle identifier</td>
+    </tr>
+    <tr>
+      <td>page_token</td>
+      <td>string, optional</td>
+      <td>Page identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response">Response</h3>
+
+<p>Response object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>next_page_token</td>
+      <td>string, optional</td>
+      <td>Token for retrieving next page of results</td>
+    </tr>
+    <tr>
+      <td>keyresults</td>
+      <td>list</td>
+      <td>A list of key result objects</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"next_page_token"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"keyresults"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"$40K in revenue from subscription sales"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"modified_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"objective_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"positive"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"confidence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.50"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"current_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10000.00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"target_value_min"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40000.00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"target_value_max"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="retrieve-an-key-result">Retrieve an key result</h2>
+
+<p>Retrieve details about the key result. Supply the unique key result ID from
+either a key result creation response or key result list.</p>
+
+<h3 class="no_toc" id="request-1">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/keyresults/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Key result identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-1">Response</h3>
+
+<p>Returns an key result object.</p>
+
+<h2 id="update-an-key-result">Update an key result</h2>
+
+<p>Update details of an key result.</p>
+
+<h3 class="no_toc" id="request-2">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/keyresults/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Key result identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Request object:</p>
+
+<p>Request body is an entire key result object with new values. Any omitted
+attributes will inherit default false value of that particular type.</p>
+
+<h3 class="no_toc" id="response-2">Response</h3>
+
+<p>Returns an updated key result object.</p>
+
+<h2 id="delete-a-key-result">Delete a key result</h2>
+
+<p>Delete an existing key result and all information associated with it.</p>
+
+<h3 class="no_toc" id="request-3">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /v1/keyresults/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Identifier of a key result to be deleted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-3">Response</h3>
+
+<p>Returns a 200 HTTP response on success.</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

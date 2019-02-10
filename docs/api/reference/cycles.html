@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Cycles - Simple OKR</title>
+  <link rel="stylesheet" href="https://docs.simpleokr.com/assets/css/just-the-docs.css">
+  
+  <script type="text/javascript" src="https://docs.simpleokr.com/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="https://docs.simpleokr.com" class="site-title fs-6 lh-tight">Simple OKR</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="https://docs.simpleokr.com/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="https://docs.simpleokr.com/api" class="navigation-list-link">Developer API</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/authentication.html" class="navigation-list-link">Authentication</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="https://docs.simpleokr.com/api/errors.html" class="navigation-list-link">Errors</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="https://docs.simpleokr.com/api/reference" class="navigation-list-link">API Reference</a>
+                      
+                        
+                        <ul class="navigation-list-child-list">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/users.html" class="navigation-list-link">Users</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/teams.html" class="navigation-list-link">Teams</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item  active">
+                                <a href="https://docs.simpleokr.com/api/reference/cycles.html" class="navigation-list-link active">Cycles</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/objectives.html" class="navigation-list-link">Objectives</a>
+                              </li>
+                            
+                          
+                            
+                              <li class="navigation-list-item ">
+                                <a href="https://docs.simpleokr.com/api/reference/keyresults.html" class="navigation-list-link">Key Results</a>
+                              </li>
+                            
+                          
+                        </ul>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap">
+      <div class="page-header">
+        <div class="main-content">
+          
+          
+        </div>
+      </div>
+      <div class="main-content js-main-content" tabindex="0">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api">Developer API</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="https://docs.simpleokr.com/api/reference">API Reference</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Cycles</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 class="no_toc" id="cycles">Cycles</h1>
+
+<p>Delivery cycles are used to organize objectives into time-bound groups.
+Delivery cycle is how we track performance and progress of your OKRs.</p>
+
+<h2 class="no_toc text-delta" id="table-of-contents">Table of Contents</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#the-cycle-object" id="markdown-toc-the-cycle-object">The cycle object</a></li>
+  <li><a href="#create-a-cycle" id="markdown-toc-create-a-cycle">Create a cycle</a></li>
+  <li><a href="#list-all-cycles" id="markdown-toc-list-all-cycles">List all cycles</a></li>
+  <li><a href="#retrieve-a-cycle" id="markdown-toc-retrieve-a-cycle">Retrieve a cycle</a></li>
+  <li><a href="#update-a-cycle" id="markdown-toc-update-a-cycle">Update a cycle</a></li>
+  <li><a href="#delete-a-cycle" id="markdown-toc-delete-a-cycle">Delete a cycle</a></li>
+</ul>
+
+<h2 id="the-cycle-object">The cycle object</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Unique delivery cycle identifier</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>Name of the delivery cycle</td>
+    </tr>
+    <tr>
+      <td>created_at</td>
+      <td>string</td>
+      <td>Time when the delivery cycle was created. RFC 3339 format.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019 Q1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="create-a-cycle">Create a cycle</h2>
+
+<p>Create a new delivery cycle object.</p>
+
+<h3 class="no_toc" id="request">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/cycles
+</code></pre></div></div>
+
+<p>Request object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>string, optional</td>
+      <td>Delivery cycle name</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019 Q1"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 class="no_toc" id="response">Response</h3>
+
+<p>Returns a newly created delivery cycle object.</p>
+
+<h2 id="list-all-cycles">List all cycles</h2>
+
+<p>Returns a list of your delivery cycles.</p>
+
+<h3 class="no_toc" id="request-1">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/cycles
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>page_token</td>
+      <td>string, optional</td>
+      <td>Page identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-1">Response</h3>
+
+<p>Response object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>next_page_token</td>
+      <td>string, optional</td>
+      <td>Token for retrieving next page of results</td>
+    </tr>
+    <tr>
+      <td>cycles</td>
+      <td>list</td>
+      <td>A list of cycle objects</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"next_page_token"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"cycles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"16682617-f25d-4df2-9f51-3c38298996b8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019 Q1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-02-20T12:32:56Z"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="retrieve-a-cycle">Retrieve a cycle</h2>
+
+<p>Retrieve details about the existing delivery cycle. Supply the unique cycle ID from either
+a cycle creation response or cycle list.</p>
+
+<h3 class="no_toc" id="request-2">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /v1/cycles/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Cycle identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-2">Response</h3>
+
+<p>Returns a delivery cycle object.</p>
+
+<h2 id="update-a-cycle">Update a cycle</h2>
+
+<p>Update details of an existing cycle.</p>
+
+<h3 class="no_toc" id="request-3">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST /v1/cycles/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Cycle identifier</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Request object:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>New cycle name to be set</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-3">Response</h3>
+
+<p>Returns an updated delivery cycle object.</p>
+
+<h2 id="delete-a-cycle">Delete a cycle</h2>
+
+<p>Delete an existing delivery cycle and all objectives associated with it.</p>
+
+<h3 class="no_toc" id="request-4">Request</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DELETE /v1/cycles/:id
+</code></pre></div></div>
+
+<p>Request arguments:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>string</td>
+      <td>Identifier of a cycle to be deleted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="no_toc" id="response-4">Response</h3>
+
+<p>Returns a 200 HTTP response on success.</p>
+
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
