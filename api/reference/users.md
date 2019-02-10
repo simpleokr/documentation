@@ -3,7 +3,7 @@ layout: page
 title: Users
 parent: API Reference
 grand_parent: Developer API
-nav_order: 3
+nav_order: 1
 has_toc: true
 ---
 

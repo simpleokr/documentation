@@ -3,7 +3,7 @@ layout: page
 title: Objectives
 parent: API Reference
 grand_parent: Developer API
-nav_order: 3
+nav_order: 4
 has_toc: true
 ---
 
@@ -220,3 +220,58 @@ Request arguments:
 {: .no_toc }
 
 Returns a 200 HTTP response on success.
+
+## Add key result to an objective
+
+Add a new key result to an objective.
+
+### Request
+{: .no_toc }
+
+```
+POST /v1/objectives/:id/keyresults
+```
+
+Request arguments:
+
+| Argument | Type |  Description |
+|----------|------|--------------|
+| id | string | Identifier of a objective |
+
+Request object:
+
+Request body is a key result object.
+
+### Response
+{: .no_toc }
+
+Returns a newly created key result object.
+
+## List key results for an objective
+
+Lists all key results for an objective.
+
+### Request
+{: .no_toc }
+
+```
+GET /v1/objectives/:id/keyresults
+```
+
+Request arguments:
+
+| Argument | Type |  Description |
+|----------|------|--------------|
+| id | string | Identifier of a objective |
+
+### Response
+{: .no_toc }
+
+Returns a list of key results associated with the objective.
+
+Response object:
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| next_page_token | string, optional | Token for retrieving next page of results |
+| keyresults | list | A list of key result objects |

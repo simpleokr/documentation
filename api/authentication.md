@@ -89,5 +89,5 @@ mac = hmac.new(bytearray(secret), digestmod=hashlib.sha256)
 mac.update(bytearray(credential + timestamp))
 digest = mac.hexdigest()
 
-print(credential, secret, timestamp, digest
+print(credential, secret, timestamp, digest)
 ```
