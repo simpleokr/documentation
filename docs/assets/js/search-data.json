@@ -58,7 +58,7 @@
   "8": {
     "id": "8",
     "title": "API Reference",
-    "content": "",
+    "content": "Here you can find API reference for Simple OKR. All API calls should be made over HTTPS to api.simpleokr.com server.",
     "url": "https://docs.simpleokr.com/api/reference",
     "relUrl": "/api/reference"
   },
